@@ -1,44 +1,180 @@
 <!DOCTYPE html>
-<Html>
+<html lang="en">
+
 <head>
-    <title>Sample Website</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daman Fitness</title>
 </head>
-<!--Logo-->
-<a class="Logo wrapper" href ="Samplewebsite.Html">
-    <img class="Logo" src="Logo.png" alt="Daman Seth" width="100">
-</a>
+<link rel="stylesheet" href="css/style.css">
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background-image: url('img/bg.jpg');
+    }
+
+    .left {
+        border: 2px solid red;
+        display: inline block;
+        position: absolute;
+        left: 60px;
+        top: 20px;
+
+
+    }
+
+    .left img {
+        width: 120px;
+        height: 65px;
+
+    }
+
+    .left div {
+        text-align: center;
+        font-size: 22px;
+        line-height: 20px;
+    }
+
+    .mid {
+        display: block;
+        width: 36%;
+        margin: 20px auto;
+        border: 2px solid green;
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 20px;
+        display: inline block;
+        border: 2px solid yellow;
+    }
+
+    .navbar {
+        display: inline-block;
+
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 20px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 10px 8px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: grey;
+
+
+    }
+
+    .btn {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: rgb(31, 30, 30);
+    }
+
+    .container {
+        border: 2px solid white;
+        margin: 160px 80px;
+        padding: 75px;
+        width: 30%;
+        display: block;
+        border-radius: 28px;
+    }
+
+    .form-group input {
+        text-align: center;
+        display: block;
+        width: 380px;
+        padding: 6px;
+        border: 2px solid black;
+        margin: 5px auto;
+        font-size: 17px;
+        border-radius: 8px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .container h1 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .container button {
+        display: block;
+        width: 92%;
+        margin: 10px auto;
+    }
+</style>
+
 <body>
-    <header>
-        <h1> About me: <em>Daman Seth</em> </h1>
+    <header class="header">
+        <!--left box for logo -->
+        <div class="left">
+            <img src="img/img.png" alt="">
+            <div>Daman Fitness</div>
+
+        </div>
+        <!-- midbox for nav bar-->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+
+        </div>
+        <!--right box for buttons-->
+        <div class="right">
+            <button class="btn">Call us Now</button>
+            <button class="btn">Email us</button>
+
+        </div>
+        <div class="container">
+            <h1>Join the best Gym of Delhi now</h1>
+            <form action="noaction.php">
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Name">
+                </div>
+                <form action="noaction.php">
+                    <div class="form-group">
+                        <input type="text" name="" placeholder="Enter your Age">
+                    </div>
+                    <form action="noaction.php">
+                        <div class="form-group">
+                            <input type="text" name="" placeholder="Enter your Phone number">
+                        </div>
+                        <form action="noaction.php">
+                            <div class="form-group">
+                                <input type="text" name="" placeholder="Enter your locality">
+                            </div>
+
+                            <button class="btn">Submit</button>
+                        </form>
+        </div>
     </header>
-<hr>
-    <section>
-        <article class="post">
-            <h3>Who am I </h3>
-            <p>I am <a href="http://www.google.com" target="_blank> Daman Seth</a> </p>
-
-           
-        </article>
-
-
-
-
-
-
-
-
-        </article>
-    </section>
-    
-    
 
 </body>
 
-
-
-
-
-
-
-
-</Html>
+</html>
